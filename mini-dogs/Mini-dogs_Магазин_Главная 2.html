@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин Главная 2 - MiniDogs</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.slides.js"></script>
+    <link rel="stylesheet" href="css/uniform.default.css"/>
+    <script src="js/jquery.uniform.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css"/>
+    <script src="js/ready.js"></script>
+    <script src="js/html5shiv.js"></script>
+</head>
+<body>
+    <div class="wrapper shop">
+        <div class="main">
+            <header>
+                <img src="images/main_top_right_corner.png" alt=""/>
+                <div class="header_top">
+                    <a href="#" class="to_favorite">
+                        <img src="images/star.png" alt=""/>
+                        <span>в избранные</span>
+                    </a>
+                    <a href="#" class="to_favorite to_main">
+                        <img src="images/arrow.png" alt=""/>
+                        <span>на главную</span>
+                    </a>
+                    <ul class="header_top_menu">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                    </ul>
+                    <div class="social">
+                        <div>
+                            <a href="#"><img src="images/social_1.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_2.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_3.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_4.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_5.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_6.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_7.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_8.png" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt=""/>
+                    <span>Минимум проблем, <span>максимум радости</span></span>
+                </a>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="поиск по магазину" class="search_input"/>
+                        <input type="submit" value="поиск" class="search_btn"/>
+                    </form>
+                </div>
+                <div class="phone_block">
+                    <img src="images/phone_icon.png" alt=""/>
+                    <div>
+                        <p class="phone">
+                            <span>+7 926</span>
+                            826-86-98
+                        </p>
+                        <p class="join_us">Присоединяйтесь к нашему клубу:</p>
+                    </div>
+                </div>
+                <div class="menu_club">
+                    <div class="our_shop">наш <br/> магазин</div>
+                    <nav>
+                        <ul>
+                            <li class="with_submenu"><a href="#" class="two_lines">ЩЕНКИ <br/>НА ПРОДАЖУ</a></li>
+                            <li class="with_submenu"><a href="#" class="two_lines">товары <br/>для собак</a></li>
+                            <li class="with_submenu"><a href="#">аксесуары</a></li>
+                            <li class="with_submenu"><a href="#">игрушки</a></li>
+                            <li><a href="#">новинки</a></li>
+                            <li><a href="#">скидки</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="cart_link"><img src="images/cart_icon.png" alt=""/>корзина пуста</a>
+                </div>
+                <div class="slides">
+                    <!--<div id="slides_top"></div>-->
+                    <div id="slides">
+                        <div id="slide_1" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                        <div id="slide_2" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                        <div id="slide_3" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                        <div id="slide_4" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                        <div id="slide_5" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_bottom rating shop">
+                    <form action="" class="enter_form shop shop2">
+                        <span class="regist">регистрация</span>
+                        <input type="text" class="name" placeholder="Имя пользователя"/>
+                        <input type="password" class="password" placeholder="Пароль"/>
+                        <input type="submit" value="" class="button"/>
+                        <div class="regist_popup_wrap">
+                            <div class="regist_popup">
+                                <form action="">
+                                    <p class="title">Зарегистрироваться</p>
+                                    <label for="name">Ваше имя</label>
+                                    <input type="text" id="name" name="name"/>
+                                    <label for="email">Электронная почта</label>
+                                    <input type="text" id="email" name="email"/>
+                                    <label for="pass">Придумайте себе пароль</label>
+                                    <input type="password" id="pass" name="pass"/>
+                                    <p class="agreement">Регистрируясь, вы соглашаетесь с
+                                        <a href="#">пользовательским соглашением</a>
+                                    </p>
+                                    <input type="submit" value="Зарегистрироваться"/>
+                                    <span class="line"></span>
+                                    <p class="through_social">Войти через социальную сеть</p>
+                                    <div class="social_links">
+                                        <a href="#"><img src="images/regist_facebook.png" alt=""/></a>
+                                        <a href="#"><img src="images/regist_vk.png" alt=""/></a>
+                                        <a href="#"><img src="images/regist_twitter.png" alt=""/></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="shop_top_links">
+                        <a href="#" class="shop_top_link_1">Сертификаты и родословность</a>
+                        <a href="#" class="shop_top_link_2">первые дни вашего питомца</a>
+                        <a href="#" class="shop_top_link_3">Необходимые прививки</a>
+                    </div>
+                </div>
+            </header>
+            <div class="content_main">
+                <div class="content_left">
+                    <div class="page_title_without_arrow shop">
+                        <h1>Наши новые собачки</h1>
+                        <div class="title_line"></div>
+                        <a href="#">Посмотреть весь список</a>
+                    </div>
+                    <div class="items_for_sales_wrap">
+                        <a href="#" class="album_item boy">
+                            <span class="album_item_pic">
+                                <img src="images/album_item_5.jpg" alt=""/>
+                            </span>
+                            <span class="album_item_date">15 июня 2012</span>
+                            <span class="album_item_name">Патрик</span>
+                            <span class="album_item_subname">черно-подпалый</span>
+                            <span class="line"></span>
+                            <span class="album_item_descrip">черно-подпалый той терьер</span>
+                            <span class="telephone">+7 903 556-47-23</span>
+                            <span class="breeder_name">(Марина)</span>
+                        </a>
+                        <a href="#" class="album_item boy">
+                            <span class="album_item_pic">
+                                <img src="images/album_item_9.jpg" alt=""/>
+                            </span>
+                            <span class="album_item_date">15 июня 2012</span>
+                            <span class="album_item_name">Минни Маус</span>
+                            <span class="album_item_subname">«Поддержи Свою Команду!»</span>
+                            <span class="line"></span>
+                            <span class="album_item_descrip">коричнево-подпалый</span>
+                            <span class="telephone">+7 903 749-72-96 </span>
+                            <span class="breeder_name">(Людмила)</span>
+                        </a>
+                        <a href="#" class="album_item girl">
+                            <span class="album_item_pic">
+                                <img src="images/dog_for_sale.jpg" alt=""/>
+                            </span>
+                            <span class="album_item_date">19 мая 2012</span>
+                            <span class="album_item_name">Элиза Майлы Фейс</span>
+                            <span class="album_item_subname">«На вес золота»</span>
+                            <span class="line"></span>
+                            <span class="album_item_descrip">рыжий той терьер</span>
+                            <span class="telephone">+7 903 749-72-96</span>
+                            <span class="breeder_name">(Людмила)</span>
+                        </a>
+                        <a href="#" class="album_item boy">
+                            <span class="album_item_pic">
+                                <img src="images/dog_for_sale_2.jpg" alt=""/>
+                            </span>
+                            <span class="album_item_date">03 июля 2012</span>
+                            <span class="album_item_name">Мидннайт Сан</span>
+                            <span class="album_item_subname">«Маленький Охотник»</span>
+                            <span class="line"></span>
+                            <span class="album_item_descrip">кремовый чихуахуа</span>
+                            <span class="telephone">+7 903 181-63-58</span>
+                            <span class="breeder_name">(Татьяна)</span>
+                        </a>
+                        <a href="#" class="album_item boy">
+                            <span class="album_item_pic">
+                                <img src="images/dog_for_sale_3.jpg" alt=""/>
+                            </span>
+                            <span class="album_item_date">18 мая 2012</span>
+                            <span class="album_item_name">Зодиак</span>
+                            <span class="album_item_subname">«Чудесный Момент»</span>
+                            <span class="line"></span>
+                            <span class="album_item_descrip">рыжий той терьер</span>
+                            <span class="telephone">7 903 282-55-99</span>
+                            <span class="breeder_name">(Татьяна)</span>
+                        </a>
+                        <a href="#" class="album_item girl">
+                            <span class="album_item_pic">
+                                <img src="images/dog_for_sale_4.jpg" alt=""/>
+                            </span>
+                            <span class="album_item_date">3 мая 2012</span>
+                            <span class="album_item_name">Симба</span>
+                            <span class="album_item_subname">«Особое восприятие»</span>
+                            <span class="line"></span>
+                            <span class="album_item_descrip">рыжий с чернью той терьер</span>
+                            <span class="telephone">+7 916 101-60-47</span>
+                            <span class="breeder_name">(Лариса)</span>
+                        </a>
+                    </div>
+                    <div class="page_title_without_arrow shop">
+                        <h1>Популярная продукция</h1>
+                        <div class="title_line"></div>
+                        <a href="#">Посмотреть весь список</a>
+                    </div>
+                    <div class="products">
+                        <div class="product_item">
+                            <img src="images/product_photo.jpg" alt=""/>
+                            <span class="price">180 <span>руб/шт</span></span>
+                            <a href="#" class="price_icon"></a>
+                            <a href="#" class="put_it_aside">Отложить товар</a>
+                            <a href="#" class="product_title">Кондиционер-ополаскиватель для собак</a>
+                            <span class="line"></span>
+                            <span class="product_item_descrip">Уход за шерстью</span>
+                        </div>
+                        <div class="product_item">
+                            <img src="images/product_photo_2.jpg" alt=""/>
+                            <span class="price">582 <span>руб/шт</span></span>
+                            <a href="#" class="price_icon"></a>
+                            <a href="#" class="put_it_aside">Отложить товар</a>
+                            <a href="#" class="product_title">TRIOL Триол Зимнее пальто для собак *Клетка*</a>
+                            <span class="line"></span>
+                            <span class="product_item_descrip">Одежда и обувь</span>
+                        </div>
+                        <div class="product_item">
+                            <img src="images/product_photo_3.jpg" alt=""/>
+                            <span class="price">680 <span>руб/шт</span></span>
+                            <a href="#" class="price_icon"></a>
+                            <a href="#" class="put_it_aside">Отложить товар</a>
+                            <a href="#" class="product_title">Пальто для собак *Тренчкот*</a>
+                            <span class="line"></span>
+                            <span class="product_item_descrip">Одежда и обувь</span>
+                        </div>
+                        <div class="product_item">
+                            <img src="images/product_photo_4.jpg" alt=""/>
+                            <span class="price">290 <span>руб/шт</span></span>
+                            <a href="#" class="price_icon"></a>
+                            <a href="#" class="put_it_aside">Отложить товар</a>
+                            <a href="#" class="product_title">Трикси Лежак <br/> *Dooley*</a>
+                            <span class="line"></span>
+                            <span class="product_item_descrip">Лежаки</span>
+                        </div>
+                        <div class="product_item">
+                            <img src="images/product_photo_5.jpg" alt=""/>
+                            <span class="price">320 <span>руб/шт</span></span>
+                            <a href="#" class="price_icon"></a>
+                            <a href="#" class="put_it_aside">Отложить товар</a>
+                            <a href="#" class="product_title">Игрушка *Косточка DENTAfun* 15 см, резина</a>
+                            <span class="line"></span>
+                            <span class="product_item_descrip">Игрушки</span>
+                        </div>
+                        <div class="product_item">
+                            <img src="images/product_photo_6.jpg" alt=""/>
+                            <span class="price">250 <span>руб/шт</span></span>
+                            <a href="#" class="price_icon"></a>
+                            <a href="#" class="put_it_aside">Отложить товар</a>
+                            <a href="#" class="product_title">Ферпласт Гигиенический совок с пакетами для улицы</a>
+                            <span class="line"></span>
+                            <span class="product_item_descrip">Чистота в доме</span>
+                        </div>
+                    </div>
+                    <div class="left_blocks">
+                        <div class="one_block">
+                            <img src="images/one_block_pic2.png" alt=""/>
+                            <a href="#">о здоровье собачек</a>
+                        </div>
+                    </div>
+                    <div class="center_block">
+                        <h3>О Наших Миниатюрных Собачках</h3>
+                        <div class="title_line"></div>
+                        <p>Собаки.... Как много оттенков эмоций скрыто в этом слове, знакомом всем с детства. Здесь и слезы умиления на глазах при виде недавно родившегося щенка, делающего первые неуверенные шаги, и искренняя безграничная радость детей, при виде этого пушистого подарка на праздник. Это отвага, храбрость, преданность и бескорыстная дружба от всего сердца на всю жизнь. Все то, что позволяет нам называть больших и маленьких собачек своими Друзьями и считать полноправными членами наших семей. Именно поэтому мы отдаем им частицу своей души и тепла в ответ на их чистую любовь.</p>
+                        <p>Но еще следует помнить, что <a href="#">содержание собак</a> – это ответственность и кропотливый труд. Именно поэтому многие люди отказывают себе в удовольствии завести собаку, так как с трудностями приходится бороться почти сразу. Главное это перестройка режима дня с регулярными прогулками в любую погоду. Также нужно быть готовым к тому, что часть вашего жилья станет собственной территорией вашего любимца, что особенно характерно для больших собак и в питомниках часто умалчивают об этом. К тому же
+                            <a href="#">любимую собаку</a> не всегда возьмешь в гости или на отдых и следует думать о том, кто может за ней присмотреть. Решить эти, казалось бы, неразрешимые проблемы могут
+                            <a class="italic" href="#">собаки декоративных пород.</a></p>
+                        <p>Заводчики Mini-Dogs посвятили многие годы жизни разведению двух удивительно очаровательных пород карманных собачек. Не влюбиться в щенков той терьера или щенков чихуахуа просто невозможно. Эти игривые, подвижные, энергичные «комочки счастья» никого не оставят равнодушными и идеально подойдут любой семье.</p>
+                    </div>
+                </div>
+                <aside class="content_right">
+                    <div class="attention_block shop">
+                        <div>
+                            <p class="title">
+                                Внимание!
+                            </p>
+                            <p class="attention_text">
+                                Вы покупаете не игрушку, а живое существо которе хочет заботы и вашей любьви.
+                                Перед покупкой в нашем магазине убедитесь что вы готовы для столь большой ответсвеннотсти что бы отвечать за жизнь живого существа
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="news_title">
+                            Горячие новости Mini-Dogs
+                            <img class="news_title_icon" src="images/news_title_icon.png" alt=""/>
+                        </div>
+                        <div class="news_main">
+                            <div class="one_new">
+                                <div class="new_date">
+                                    <span class="day">02</span>
+                                    <span class="month">Июль</span>
+                                </div>
+                                <p class="one_new_title">Статус продажи щенков клуба в 2012 году</p>
+                                <p class="new_text">Зарезервирован и снят с продажи отлично сложенный коричнево-подпалый щенок той терьера Рэми, который может показать мастер-класс по борьбе даже с самим медвежонком Винни, смотрите фото щенка «Кто сильнее?». Этот смышлёный и жизнерадостный малыш не равнодушен к техническому прогрессу и уже знакомится с электронными книгами eBook</p>
+                                <a class="new_link" href="#">Читать дальше</a>
+                            </div>
+                            <div class="news_line"></div>
+                            <div class="one_new">
+                                <div class="new_date">
+                                    <span class="day">25</span>
+                                    <span class="month">Апрель</span>
+                                </div>
+                                <p class="one_new_title">Весне – дорогу!</p>
+                                <p class="new_text">Весна - время перемен и пополнения семейства, у заводчиков Mini-Dogs, в дополнение с той терьерам и чихуахуа, появились маленькие питомцы новых декоративных пород, мальтезе и йоркшир- ский терьер, которые мы рады представить вместе с этими весенними новостями.</p>
+                                <a class="new_link" href="#">Читать дальше</a>
+                            </div>
+                            <a class="news_button" href="#">Лента новостей</a>
+                        </div>
+                    </div>
+                    <div class="twitter">
+                        <img src="images/twitter_block.png" alt=""/>
+                    </div>
+                    <div class="clear30"></div>
+                    <div class="one_block">
+                        <img src="images/one_block_pic3.png" alt=""/>
+                        <a href="#" class="two_lines">фото маленьких <br/> собак</a>
+                    </div>
+                    <div class="one_block">
+                        <img src="images/one_block_pic4.png" alt=""/>
+                        <a href="#" class="two_lines">статьи о самых <br/> маленьких</a>
+                    </div>
+                </aside>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <footer>
+            <p class="footer_slogan">Мы не только говорим, что любим собак, мы действительно дарим им всю свою любовь!</p>
+            <div class="footer_line"></div>
+            <div class="footer_social">
+                <div class="social">
+                    <div>
+                        <a href="#"><img src="images/social_1.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_2.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_3.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_4.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_5.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_6.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_7.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_8.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="bookmarks">
+                    <span>в закладки:</span>
+                    <a href="#"><img src="images/bookmark_1.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_2.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_3.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_4.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_5.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_6.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_7.png" alt=""/></a>
+                </div>
+            </div>
+            <nav class="footer_menu">
+                <img src="images/footer_dog.png" alt=""/>
+                <ul>
+                    <li><a href="#"> · <span>О клубе</span></a></li>
+                    <li><a href="#"> · <span>Новости</span></a></li>
+                    <li><a href="#"> · <span>Русский той-терьер</span></a></li>
+                    <li><a href="#"> · <span>Чихуахуа</span></a></li>
+                    <li><a href="#"> · <span>Мальтезе</span></a></li>
+                    <li><a href="#"> · <span>Йоркширский терьер</span></a></li>
+                    <li><a href="#"> · <span>Цвергпинчер</span></a></li>
+                    <li><a href="#"> · <span>Щенки</span></a></li>
+                    <li><a href="#"> · <span>Фото собак</span></a></li>
+                    <li><a href="#"> · <span>Статьи</span></a></li>
+                    <li><a href="#"> · <span>Вопросы и ответы</span></a></li>
+                    <li><a href="#"> · <span>Друзья & Партнёры</span></a></li>
+                </ul>
+            </nav>
+            <div class="footer_bottom">
+                <div class="barcode">
+                    <img src="images/barcode.png" alt=""/>
+                </div>
+                <div class="copyright">
+                    <p>2005 — 2012 © Клуб Mini-Dogs. Сообщество питомников Москвы Сайты о собаках</p>
+                    <p><a href="#">Авторские Права:</a> Использование фотографий или любых материалов сайта разрешено только с <a href="#">активной гиперссылкой</a> на сайт.</p>
+                </div>
+                <div class="counters">
+                    <img src="images/counters.png" alt=""/>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

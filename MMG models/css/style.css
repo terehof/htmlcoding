@@ -1,0 +1,67 @@
+body {
+    background: #a6a6a6;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+.content {
+    padding-bottom: 50px;
+    width: 1060px;
+    margin: auto;
+}
+.container {
+    margin: 0 auto;
+    width: 1070px;
+    position: relative;
+}
+.index_slider {
+    padding: 0 50px;
+}
+.sections-links {
+    margin: 0 0 0 -20px;
+    padding: 0 0 50px;
+    font-family: "Hero-Light", Arial;
+}
+
+.sections-links li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    width: 198px;
+    margin-left: 20px;
+}
+.sections-links li a {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.sections-links li a img {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+.sections-links li a .title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fefefe;
+    font-size: 21px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+}
+.sections-links li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}

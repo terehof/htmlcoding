@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts - Concrete Jungle</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-scrolltofixed-min.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <header id="header" class="scroll-to-fixed-fixed">
+            <a class="logo" href="#"><img src="img/logo.png" alt=""/></a>
+            <nav>
+                <a id="touch-menu" class="mobile-menu" href="#"><i class="icon"></i></a>
+                <ul>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Рисунки</a></li>
+                    <li><a href="#">Выставки</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Команды</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <h1>Контактная информация</h1>
+            <p>
+                ООО "Конкрит Джангл" (Concrete Jungle Co., Ltd) <br/>
+                Проектно-производственная мастерская "Конкрит Джангл"
+            </p>
+            <button class="download_btn">скачать реквизиты</button>
+            <div class="contacts">
+                <p class="contact address">690068, 100-летия Владивостока пр-т, 155 корп. 6 (ЦРМ)</p>
+                <p class="contact phone"><a href="tel:+79025253440">+7 902 525 34 40</a></p>
+                <p class="contact phone"><a href="tel:+79025253440">+7 902 525 34 40</a></p>
+                <p class="contact email"><a href="mailto:mail@cjungle.com">mail@cjungle.com</a></p>
+            </div>
+
+            <div class="contacts_tabs">
+                <ul class="tabs">
+                    <li class="current">карта проезда</li>
+                    <li>схема территории</li>
+                </ul>
+                <div class="box visible">
+                    <div id="map-canvas"></div>
+                </div>
+                <div class="box">
+                    Схема территории
+                </div>
+
+
+            </div>
+
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+            <script>
+                var map;
+                function initialize() {
+                    var markerLatLng = new google.maps.LatLng(43.1794048,131.9178463);
+                    var myLatlng = new google.maps.LatLng(43.1794048,131.9178463);
+
+                    var mapOptions = {
+                        zoom: 17,
+                        center: myLatlng,
+                        scrollwheel: false,
+                        panControl: true,
+                        panControlOptions: {
+                            position: google.maps.ControlPosition.TOP_LEFT
+                        },
+                        zoomControl: true,
+                        zoomControlOptions: {
+                            style: google.maps.ZoomControlStyle.LARGE,
+                            position: google.maps.ControlPosition.LEFT_CENTER
+                        },
+                        scaleControl: true,
+                        scaleControlOptions: {
+                            style: google.maps.ScaleControlStyle.DEFAULT
+                        },
+                        streetViewControl: true,
+                        streetViewControlOptions: {
+                            position: google.maps.ControlPosition.LEFT_TOP
+                        },
+                        mapTypeControl: true,
+                        mapTypeControlOptions: {
+                            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                            position: google.maps.ControlPosition.TOP_RIGHT
+                        }
+
+                    };
+                    map = new google.maps.Map(document.getElementById('map-canvas'),
+                            mapOptions);
+
+                    var marker = new google.maps.Marker({
+                        position: markerLatLng,
+                        map: map,
+                        title: 'Hello World!'
+                    });
+                }
+
+                google.maps.event.addDomListener(window, 'load', initialize);
+
+            </script>
+        </div>
+        <footer>
+            <a href="#" class="footer_logo">
+                <img src="img/logo_footer.png" alt=""/>
+            </a>
+            <p class="copyright">© 2014 concrete jungle</p>
+            <a href="mailto:mail@cjungle.com" class="mail">mail@cjungle.com</a>
+            <p class="made_by">Сделано в студии «<a href="#">АйТи Этика</a>»</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

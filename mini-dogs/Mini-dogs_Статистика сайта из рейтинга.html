@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика - MiniDogs</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
+    <script src="js/ready.js"></script>
+    <script src="js/html5shiv.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <header>
+                <img src="images/main_top_right_corner.png" alt=""/>
+                <div class="header_top">
+                    <a href="#" class="to_favorite">
+                        <img src="images/star.png" alt=""/>
+                        <span>в избранные</span>
+                    </a>
+                    <div class="social">
+                        <div>
+                            <a href="#"><img src="images/social_1.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_2.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_3.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_4.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_5.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_6.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_7.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_8.png" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt=""/>
+                    <span>Минимум проблем, <span>максимум радости</span></span>
+                </a>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Карта</a></li>
+                        <li><a href="#">Рейтинг</a></li>
+                        <li><a href="#">Друзья</a></li>
+                    </ul>
+                </nav>
+                <div class="phone_block">
+                    <img src="images/phone_icon.png" alt=""/>
+                    <div>
+                        <p class="phone">
+                            <span>+7 926</span>
+                            826-86-98
+                        </p>
+                        <p class="join_us">Присоединяйтесь к нашему клубу:</p>
+                    </div>
+                </div>
+                <div class="menu_club">
+                    <nav>
+                        <ul>
+                            <li><a href="#">О КЛУБЕ</a></li>
+                            <li><a href="#">НОВОСТИ</a></li>
+                            <li><a href="#" class="two_lines active">ЩЕНКИ <br/>НА ПРОДАЖУ</a></li>
+                            <li class="with_submenu"><a href="#">ФОТО СОБАК</a></li>
+                            <li><a href="#">РУССКИЙ ТОЙ</a></li>
+                            <li><a href="#">ЧИХУАХУА</a></li>
+                            <li class="with_submenu">
+                                <a href="#">СТАТЬИ</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Всё о Русских той терьерах</a></li>
+                                    <li><a href="#">Всё о собачках Чихуахуа</a></li>
+                                    <li><a href="#">Содержание, питание и уход за собаками</a></li>
+                                    <li><a href="#">Воспитание и дрессировка собачек</a></li>
+                                    <li><a href="#">Здоровье декоративных собак</a></li>
+                                    <li><a href="#">Полезная информация для любителей собак</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#">наш <br/> магазин</a>
+                </div>
+                <div class="breadcrumbs">
+                    <a href="#">Главная страница </a>
+                    <a href="#">Рейтинг</a>
+                    <span>СуперПёсик.ру</span>
+                    <div>
+                        <a href="#" class="breadcrumbs_line_links">ПРАВИЛА участия; инструкции</a>
+                        <a href="#" class="breadcrumbs_line_links">Зачем регистрироваться в РЕЙТИНГЕ?</a>
+                    </div>
+                </div>
+                <div class="header_bottom rating">
+                    <form action="" class="enter_form">
+                        <input type="text" class="name" placeholder="Имя пользователя"/>
+                        <input type="password" class="password" placeholder="Пароль"/>
+                        <input type="submit" value="" class="button"/>
+                    </form>
+                    <div class="rating_top_links">
+                        <a href="#" class="rating_top_link_1">ТОП сайтов О СОБАКАХ</a>
+                        <a href="#" class="rating_top_link_2">Добавить сайт в рейтинг</a>
+                    </div>
+                </div>
+            </header>
+            <div class="content_main">
+                <div class="content_left">
+                    <div class="page_title rating">
+                        <h1>Сайт о собаках - СуперПёсик.ру. Собаки, породы собак.</h1>
+                        <div class="title_line"></div>
+                    </div>
+                    <div class="membership_card_rating">
+                        <div class="membership_card_left">
+                            <img src="images/rating_site_1.png" alt=""/>
+                            <p class="rating_text">Не заурядный сайт посвященный собакам, который расскажет не только о породах собак, но и в дружелюбной атмосфере покажет фото и видео о собаках, новости и интересные статьи!</p>
+                            <p class="membership_info"><span>Имя :</span>superpesik</p>
+                            <p class="membership_info"><span>Участник с:</span>2011-01-20</p>
+                            <p class="membership_info"><span>Категория:</span>Порталы о собаках</p>
+                            <p class="membership_info"><span>Теги:</span>видео собак породы собак портал собаки фото собак</p>
+                            <p class="membership_info"><span>URL:</span><a href="#">http://superpesik.ru</a></p>
+                        </div>
+                        <div class="membership_card_right">
+                            <p class="title">Экспресс анализ сайта</p>
+                            <div class="analysis">
+                                <div>
+                                    <p>Сегодня посетителей <span> 2917</span></p>
+                                    <br/>
+                                    <p>ТИЦ Яндекс:</p>
+                                    <img src="images/analysis_yandex.jpg" alt=""/>
+                                </div>
+                                <div>
+                                    <p>Среднее посетителей <span> 3648,60</span></p>
+                                    <br/>
+                                    <p>Google PR:</p>
+                                    <img src="images/analysis_google.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="average">
+                                <p><span>Средний балл:</span><span>3 из 5</span></p>
+                                <p><span>Средний балл:</span><span>2</span></p>
+                            </div>
+                            <div class="stars">
+                                <span>популярность:</span>
+                                <div class="raiting stars three"></div>
+                            </div>
+                        </div>
+                        <a href="#">Проголосуйте за этот сайт!</a>
+                    </div>
+                    <div class="reviews_about">
+                        <p class="title">Отзывы о superpesik (3):</p>
+                        <a href="#">К отзывам</a>
+                    </div>
+                    <div class="related_sites">
+                        <a href="#">Собачья Жизнь - Все сведения о собаках</a>;
+                        <a href="#">Все породы собак</a>;
+                        <a href="#">Домашние любимцы. Все о собаках</a>;
+                        <a href="#">Кинологический портал «Верный Пёс» Все о собаках и их хозяевах</a>;
+                        <a href="#">Полная энциклопедия о собаках «Dogs-Planet.ru»</a>;
+                    </div>
+                    <div class="statistics">
+                        <script>
+                            google.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['Время', 'Уникальных пришло', 'Всего пришло'],
+                                    ['July 2008',  3750, 5150],
+                                    ['July 2009',  3580, 5200],
+                                    ['July 2010',  4200, 5860],
+                                    ['July 2011',  3850, 5650],
+                                    ['July 2012',  3780, 5600],
+                                    ['Вчера',  350,       5000],
+                                    ['Сегодня',  2900,      4200]
+                                ]);
+
+                                var options = {
+                                    title: 'Статистика для http://superpesik.ru',
+                                    fontName:'Verdana',
+                                    fontSize: 10,
+                                    curveType: 'none',
+                                    legend: { position: 'bottom' }
+                                };
+
+                                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+                                chart.draw(data, options);
+                            }
+                        </script>
+                        <div id="chart_div" style="width: 810px; height: 220px;"></div>
+                    </div>
+                    <div class="statictics_table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Уникальных страниц</th>
+                                    <th>Всего страниц</th>
+                                    <th>Уникальных пришло</th>
+                                    <th>Всего пришло</th>
+                                    <th>Уникальных ушло</th>
+                                    <th>Всего ушло</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Всего:</td>
+                                    <td>1568187</td>
+                                    <td>2617055</td>
+                                    <td>257</td>
+                                    <td>347</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="graphics">
+                        <div class="graph">
+                            <img src="images/graph_1.jpg" alt=""/>
+                        </div>
+                        <div class="graph">
+                            <img src="images/graph_2.jpg" alt=""/>
+                        </div>
+                        <div class="graph">
+                            <img src="images/graph_3.jpg" alt=""/>
+                        </div>
+                        <div class="graph">
+                            <img src="images/graph_4.jpg" alt=""/>
+                        </div>
+                    </div>
+
+                    <div class="gray_line"></div>
+                    <a href="#" class="back_button">вернуться</a>
+                    <div class="bunner">
+                        <img src="images/bunner.png" alt=""/>
+                    </div>
+                </div>
+                <aside class="content_right">
+                    <div class="ads">
+                        <p class="title">Список Категорий </p>
+                        <ul class="categories">
+                            <li><a href="#">Бойцовые собаки</a></li>
+                            <li><a href="#">Декоративные собаки</a></li>
+                            <li><a href="#">Ездовые собаки и Спорт</a></li>
+                            <li><a href="#">Кинологические клубы и Организации</a></li>
+                            <li><a href="#">Многопородные питомники</a></li>
+                            <li><a href="#">Охотничьи собаки</a></li>
+                            <li><a href="#">Персональные сайты</a></li>
+                            <li><a href="#">Порталы о собаках</a></li>
+                            <li><a href="#">Служебные собаки</a></li>
+                            <li><a href="#">Собаки-компаньоны</a></li>
+                            <li><a href="#">Товары и услуги для собак</a></li>
+                            <li><a href="#">Форумы о собаках</a></li>
+                        </ul>
+                    </div>
+                    <div class="ads">
+                        <p class="title">Новые Участники</p>
+                        <ul class="new_participant">
+                            <li><a href="#">Питомник «Animals Kingdom»...</a></li>
+                            <li><a href="#">Чихуахуа и мини спаниели в...</a></li>
+                            <li><a href="#">Щенки Чихуахуа питомника «Из...</a></li>
+                            <li><a href="#">Питомник Мопсов «Милль Баси»...</a></li>
+                            <li><a href="#">Arden Grange - супер премиум...</a></li>
+                        </ul>
+                    </div>
+                    <div class="advertise_block">
+                        <p class="advertise_one">
+                            Реклама на Sape.ru не несет ответственности за сохранность <a href="#">вещей своих гостей!</a>
+                        </p>
+                        <p class="advertise_one">
+                            <a href="#">Реклама на Sape.ru</a> На самом деле думали будет хуже, но наши ожидания не оправдались.
+                        </p>
+                        <p class="advertise_one">
+                            Реклама на Sape.ru был проделан <a href="#">большой объем работ</a> улучшению сервиса и увеличению количества услуг
+                        </p>
+                        <p class="advertise_one">
+                            Реклама на Sape.ru <a href="#">не несет ответственности</a> за сохранность вещей своих гостей!
+                        </p>
+                        <p class="advertise_one">
+                            Реклама на Sape.ru На самом деле думали будет хуже, но <a href="#">наши ожидания</a> не оправдались.
+                        </p>
+                    </div>
+                </aside>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <footer>
+            <p class="footer_slogan">Мы не только говорим, что любим собак, мы действительно дарим им всю свою любовь!</p>
+            <div class="footer_line"></div>
+            <div class="footer_social">
+                <div class="social">
+                    <div>
+                        <a href="#"><img src="images/social_1.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_2.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_3.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_4.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_5.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_6.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_7.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_8.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="bookmarks">
+                    <span>в закладки:</span>
+                    <a href="#"><img src="images/bookmark_1.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_2.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_3.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_4.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_5.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_6.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_7.png" alt=""/></a>
+                </div>
+            </div>
+            <nav class="footer_menu">
+                <img src="images/footer_dog.png" alt=""/>
+                <ul>
+                    <li><a href="#"> · <span>О клубе</span></a></li>
+                    <li><a href="#"> · <span>Новости</span></a></li>
+                    <li><a href="#"> · <span>Русский той-терьер</span></a></li>
+                    <li><a href="#"> · <span>Чихуахуа</span></a></li>
+                    <li><a href="#"> · <span>Мальтезе</span></a></li>
+                    <li><a href="#"> · <span>Йоркширский терьер</span></a></li>
+                    <li><a href="#"> · <span>Цвергпинчер</span></a></li>
+                    <li><a href="#"> · <span>Щенки</span></a></li>
+                    <li><a href="#"> · <span>Фото собак</span></a></li>
+                    <li><a href="#"> · <span>Статьи</span></a></li>
+                    <li><a href="#"> · <span>Вопросы и ответы</span></a></li>
+                    <li><a href="#"> · <span>Друзья & Партнёры</span></a></li>
+                </ul>
+            </nav>
+            <div class="footer_bottom">
+                <div class="barcode">
+                    <img src="images/barcode.png" alt=""/>
+                </div>
+                <div class="copyright">
+                    <p>2005 — 2012 © Клуб Mini-Dogs. Сообщество питомников Москвы Сайты о собаках</p>
+                    <p><a href="#">Авторские Права:</a> Использование фотографий или любых материалов сайта разрешено только с <a href="#">активной гиперссылкой</a> на сайт.</p>
+                </div>
+                <div class="counters">
+                    <img src="images/counters.png" alt=""/>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

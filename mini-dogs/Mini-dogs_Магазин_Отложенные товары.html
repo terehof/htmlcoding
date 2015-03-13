@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин Отложенные товары - MiniDogs</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.slides.js"></script>
+    <link rel="stylesheet" href="css/uniform.default.css"/>
+    <script src="js/jquery.uniform.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css"/>
+    <script src="js/ready.js"></script>
+    <script src="js/html5shiv.js"></script>
+</head>
+<body>
+    <div class="wrapper shop">
+        <div class="main">
+            <header>
+                <img src="images/main_top_right_corner.png" alt=""/>
+                <div class="header_top">
+                    <a href="#" class="to_favorite">
+                        <img src="images/star.png" alt=""/>
+                        <span>в избранные</span>
+                    </a>
+                    <a href="#" class="to_favorite to_main">
+                        <img src="images/arrow.png" alt=""/>
+                        <span>на главную</span>
+                    </a>
+                    <ul class="header_top_menu">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                    </ul>
+                    <div class="social">
+                        <div>
+                            <a href="#"><img src="images/social_1.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_2.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_3.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_4.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_5.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_6.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_7.png" alt=""/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/social_8.png" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt=""/>
+                    <span>Минимум проблем, <span>максимум радости</span></span>
+                </a>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="поиск по магазину" class="search_input"/>
+                        <input type="submit" value="поиск" class="search_btn"/>
+                    </form>
+                </div>
+                <div class="phone_block">
+                    <img src="images/phone_icon.png" alt=""/>
+                    <div>
+                        <p class="phone">
+                            <span>+7 926</span>
+                            826-86-98
+                        </p>
+                        <p class="join_us">Присоединяйтесь к нашему клубу:</p>
+                    </div>
+                </div>
+                <div class="menu_club">
+                    <div class="our_shop">наш <br/> магазин</div>
+                    <nav>
+                        <ul>
+                            <li class="with_submenu"><a href="#" class="two_lines">ЩЕНКИ <br/>НА ПРОДАЖУ</a></li>
+                            <li class="with_submenu"><a href="#" class="two_lines">товары <br/>для собак</a></li>
+                            <li class="with_submenu"><a href="#">аксесуары</a></li>
+                            <li class="with_submenu"><a href="#">игрушки</a></li>
+                            <li><a href="#">новинки</a></li>
+                            <li><a href="#">скидки</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="cart_link"><img src="images/cart_icon.png" alt=""/>корзина пуста</a>
+                </div>
+                <div class="slides">
+                    <!--<div id="slides_top"></div>-->
+                    <div id="slides">
+                        <div id="slide_1" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                        <div id="slide_2" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                        <div id="slide_3" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                        <div id="slide_4" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                        <div id="slide_5" class="slide">
+                            <img src="images/slide.png" alt=""/>
+                            <a href="#" class="more">узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_bottom rating shop">
+                    <form action="" class="enter_form shop">
+                        <a href="#" class="exit">выход</a>
+                        <span class="hello">Привет, Виталий</span>
+                        <a href="#" class="deffered">Отложеные товары</a>
+                        <a href="#" class="viewed">Недавно просмотренные</a>
+                    </form>
+                    <div class="shop_top_links">
+                        <a href="#" class="shop_top_link_1">Сертификаты и родословность</a>
+                        <a href="#" class="shop_top_link_2">первые дни вашего питомца</a>
+                        <a href="#" class="shop_top_link_3">Необходимые прививки</a>
+                    </div>
+                </div>
+            </header>
+            <div class="content_main">
+                <div class="page_title_without_arrow shop deferred_items">
+                    <h1>отложенные товары</h1>
+                    <div class="title_line"></div>
+                    <a href="#">Очистить список</a>
+                </div>
+                <div class="products text_al_left">
+                    <div class="product_item">
+                        <img src="images/product_photo.jpg" alt=""/>
+                        <span class="price">180 <span>руб/шт</span></span>
+                        <a href="#" class="price_icon"></a>
+                        <a href="#" class="put_it_aside delete">Удалить</a>
+                        <a href="#" class="product_title">Кондиционер-ополаскиватель для собак</a>
+                        <span class="line"></span>
+                        <span class="product_item_descrip">Уход за шерстью</span>
+                    </div>
+                    <div class="product_item">
+                        <img src="images/product_photo_2.jpg" alt=""/>
+                        <span class="price">582 <span>руб/шт</span></span>
+                        <a href="#" class="price_icon"></a>
+                        <a href="#" class="put_it_aside delete">Удалить</a>
+                        <a href="#" class="product_title">TRIOL Триол Зимнее пальто для собак *Клетка*</a>
+                        <span class="line"></span>
+                        <span class="product_item_descrip">Одежда и обувь</span>
+                    </div>
+                    <div class="product_item">
+                        <img src="images/product_photo_3.jpg" alt=""/>
+                        <span class="price">680 <span>руб/шт</span></span>
+                        <a href="#" class="price_icon"></a>
+                        <a href="#" class="put_it_aside delete">Удалить</a>
+                        <a href="#" class="product_title">Пальто для собак *Тренчкот*</a>
+                        <span class="line"></span>
+                        <span class="product_item_descrip">Одежда и обувь</span>
+                    </div>
+                    <div class="product_item">
+                        <img src="images/product_photo_4.jpg" alt=""/>
+                        <span class="price">290 <span>руб/шт</span></span>
+                        <a href="#" class="price_icon"></a>
+                        <a href="#" class="put_it_aside delete">Удалить</a>
+                        <a href="#" class="product_title">Трикси Лежак <br/> *Dooley*</a>
+                        <span class="line"></span>
+                        <span class="product_item_descrip">Лежаки</span>
+                    </div>
+                    <div class="product_item">
+                        <img src="images/product_photo_4.jpg" alt=""/>
+                        <span class="price">290 <span>руб/шт</span></span>
+                        <a href="#" class="price_icon"></a>
+                        <a href="#" class="put_it_aside delete">Удалить</a>
+                        <a href="#" class="product_title">Трикси Лежак <br/> *Dooley*</a>
+                        <span class="line"></span>
+                        <span class="product_item_descrip">Лежаки</span>
+                    </div>
+                    <div class="product_item">
+                        <img src="images/product_photo_5.jpg" alt=""/>
+                        <span class="price">320 <span>руб/шт</span></span>
+                        <a href="#" class="price_icon"></a>
+                        <a href="#" class="put_it_aside delete">Удалить</a>
+                        <a href="#" class="product_title">Игрушка *Косточка DENTAfun* 15 см, резина</a>
+                        <span class="line"></span>
+                        <span class="product_item_descrip">Игрушки</span>
+                    </div>
+                    <div class="product_item">
+                        <img src="images/product_photo_6.jpg" alt=""/>
+                        <span class="price">250 <span>руб/шт</span></span>
+                        <a href="#" class="price_icon"></a>
+                        <a href="#" class="put_it_aside delete">Удалить</a>
+                        <a href="#" class="product_title">Ферпласт Гигиенический совок с пакетами для улицы</a>
+                        <span class="line"></span>
+                        <span class="product_item_descrip">Чистота в доме</span>
+                    </div>
+                </div>
+                <div class="gray_line deffered"></div>
+                <a href="#" class="back_button">вернуться</a>
+                <div class="post_scriptum">
+                    <img src="images/ps_icon.png" alt=""/>
+                    <div class="ps_content">
+                        <p class="ps_title">PS: 29 Июля 2011 г.</p>
+                        <p class="text">нашел свой новый дом очаровашка Вилли, братик нашей миниатюрной рыжей тойки. Этот активный жизнерадостный тойчик отличается не только своей смекалкой, но и уравновешенным характером и адекватной психикой, и мы уверены, что при правильном воспитании он станет гордостью своих молодых хозяев! Кроме фотографий щенков в этом альбоме посмотрите забавный портрет этого милого тойчика «В поисках Карибского моря»... а сестрёнка Вилли, маленькая и очень активная рыженькая тоечка Ви-Ви тоже нашла свою новую семью, только немножко попозже, 27 сентября 2011 года, и теперь уже не грустит и не скучает по своему братику, так как в ее новом доме она познакомилась уже со своей новой старшей подружкой, очаровательной Вивьен..</p>
+                    </div>
+                </div>
+                <div class="bunner">
+                    <img src="images/bunner.png" alt=""/>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <footer>
+            <p class="footer_slogan">Мы не только говорим, что любим собак, мы действительно дарим им всю свою любовь!</p>
+            <div class="footer_line"></div>
+            <div class="footer_social">
+                <div class="social">
+                    <div>
+                        <a href="#"><img src="images/social_1.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_2.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_3.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_4.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_5.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_6.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_7.png" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/social_8.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="bookmarks">
+                    <span>в закладки:</span>
+                    <a href="#"><img src="images/bookmark_1.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_2.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_3.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_4.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_5.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_6.png" alt=""/></a>
+                    <a href="#"><img src="images/bookmark_7.png" alt=""/></a>
+                </div>
+            </div>
+            <nav class="footer_menu">
+                <img src="images/footer_dog.png" alt=""/>
+                <ul>
+                    <li><a href="#"> · <span>О клубе</span></a></li>
+                    <li><a href="#"> · <span>Новости</span></a></li>
+                    <li><a href="#"> · <span>Русский той-терьер</span></a></li>
+                    <li><a href="#"> · <span>Чихуахуа</span></a></li>
+                    <li><a href="#"> · <span>Мальтезе</span></a></li>
+                    <li><a href="#"> · <span>Йоркширский терьер</span></a></li>
+                    <li><a href="#"> · <span>Цвергпинчер</span></a></li>
+                    <li><a href="#"> · <span>Щенки</span></a></li>
+                    <li><a href="#"> · <span>Фото собак</span></a></li>
+                    <li><a href="#"> · <span>Статьи</span></a></li>
+                    <li><a href="#"> · <span>Вопросы и ответы</span></a></li>
+                    <li><a href="#"> · <span>Друзья & Партнёры</span></a></li>
+                </ul>
+            </nav>
+            <div class="footer_bottom">
+                <div class="barcode">
+                    <img src="images/barcode.png" alt=""/>
+                </div>
+                <div class="copyright">
+                    <p>2005 — 2012 © Клуб Mini-Dogs. Сообщество питомников Москвы Сайты о собаках</p>
+                    <p><a href="#">Авторские Права:</a> Использование фотографий или любых материалов сайта разрешено только с <a href="#">активной гиперссылкой</a> на сайт.</p>
+                </div>
+                <div class="counters">
+                    <img src="images/counters.png" alt=""/>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

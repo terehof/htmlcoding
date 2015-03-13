@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Vector</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/chosen.css"/>
+    <script src="js/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="css/flexslider.css"/>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css"/>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/item-photo.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="css/jquery.popup.css"/>
+    <script src="js/jquery.popup.js"></script>
+    <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full" data-id="dgLoader"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="wrapper">
+<header>
+    <div class="header_top_line"></div>
+    <div class="container">
+        <a href="#" class="logo"><img src="img/logo.png" alt=""/></a>
+        <div class="fr header_contacts">
+            <div class="branches">
+                <select name="branches" id="branches_select">
+                    <option value="1">Владивосток</option>
+                    <option value="2">Тула</option>
+                    <option value="3">Тюмень</option>
+                    <option value="4">Ульяновск</option>
+                    <option value="5">Уфа</option>
+                    <option value="6">Челябинск</option>
+                    <option value="7">Южно-Сахалинск</option>
+                    <option value="8">Якутск</option>
+                    <option value="9">Ярославль</option>
+                </select>
+                <a href="#" class="all_branches">наши филиалы</a>
+            </div>
+            <div class="callback">
+                <a href="tel:+74232330204" class="callback_phone"><small>+7 (423)</small> 233-02-04</a>
+                <a href="#" class="js__p_callback_start callback_btn">заказать обратный звонок</a>
+            </div>
+            <div class="telephone">
+                <a href="tel:88007001217" class="phone_number">8 (800) 700-12-17</a>
+                <p>звонок по России бесплатный</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li class="catalog"><a href="#">Каталог <span></span></a></li>
+                <li><a href="#">Объекты</a></li>
+                <li class="active"><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </nav>
+        <button class="fr download_price js__p_pricelist_start">Скачать прайс</button>
+        <div class="catalog_submenu">
+            <div class="submenu_section">
+                <p>ОПАЛУБКА</p>
+                <ul>
+                    <li><a href="#">Стен и колонн</a></li>
+                    <li><a href="#">Перекрытий</a></li>
+                    <li><a href="#">Комплектующие</a></li>
+                </ul>
+            </div>
+            <div class="submenu_section">
+                <p>ПОДЬЁМНОЕ ОБОРУДОВАНИЕ</p>
+                <ul>
+                    <li><a href="#">Мачтовые подъемники</a></li>
+                    <li><a href="#">Фасадные подъемники</a></li>
+                    <li><a href="#">Башенные краны</a></li>
+                </ul>
+            </div>
+            <div class="submenu_section">
+                <p>СТРОИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
+                <ul>
+                    <li><a href="#">Станки для работы с арматурой</a></li>
+                    <li><a href="#">Виброоборудование</a></li>
+                    <li><a href="#">Средста малой механизации</a></li>
+                    <li><a href="#">Прогрев бетона</a></li>
+                </ul>
+            </div>
+            <div class="submenu_section">
+                <p>РАСХОДНЫЕ МАТЕРИАЛЫ</p>
+                <ul>
+                    <li><a href="#">Фиксаторы арматуры</a></li>
+                    <li><a href="#">Смазка для опалубки</a></li>
+                    <li><a href="#">Фасадная сетка</a></li>
+                </ul>
+            </div>
+            <div class="submenu_section">
+                <p>СТРОИТЕЛЬНЫЕ ЛЕСА</p>
+                <ul>
+                    <li><a href="#">Рамные</a></li>
+                    <li><a href="#">Клиновые</a></li>
+                    <li><a href="#">Хомутовые</a></li>
+                </ul>
+            </div>
+            <div class="submenu_section">
+                <p>ОБОРУДОВАНИЕ ДЛЯ БЕТОНА</p>
+                <ul>
+                    <li><a href="#">Автобетононасосы</a></li>
+                    <li><a href="#">Стационарные бетононасосы</a></li>
+                    <li><a href="#">Раздаточные стрелы</a></li>
+                </ul>
+            </div>
+            <div class="submenu_section">
+                <p>ЗАВОДЫ</p>
+                <ul>
+                    <li><a href="#">Бетонозаводы</a></li>
+                    <li><a href="#">Асфальтобетонозаводы</a></li>
+                </ul>
+            </div>
+            <span class="close"></span>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a>&nbsp;&nbsp;\&nbsp;
+                О компании
+            </div>
+        </div>
+        <div class="container">
+            <h1>О КОМПАНИИ</h1>
+            <p class="text">Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта, которое возникает с ситуации несоответствия желаемого и действительного, поэтому воспитание латентно. Аутотренинг гомогенно выбирает экзистенциальный архетип.
+                <a href="#">Коллективное бессознательное</a>, иcходя из того, что кумулятивно.
+            </p>
+            <p class="text">Аномия, на первый взгляд, непоследовательно просветляет конформизм, как и предсказывают практические аспекты использования принципов гештальпсихологии в области восприятия, обучения, развития психики, социальных взаимоотношений. Предсознательное непосредственно аннигилирует инсайт. Все это побудило нас обратить внимание на то, что аутизм одинаково вызывает генезис. Действие фундаментально начинает экспериментальный ассоцианизм. Репрезентативная система, например,
+                <a href="#">ранее посещённая ссылка</a>, и это неудивительно, если речь о персонифицированном характере первичной социализации. Филогенез отчуждает филосовский стимул.
+            </p>
+            <img src="img/about.jpg" alt="" class="about_image"/>
+            <p class="text">При прочих равных условиях деградация латерально сжимает уровень грунтовых вод. Просеивание методологически повышает глинистый ташет. Почвообразовательный процесс, несмотря на внешние воздействия, стекает в ламинарный эксикатор, что лишний раз подтверждает правоту Докучаева.</p>
+            <p class="text">Подзолообразование, несмотря на внешние воздействия, вымывает в смешанный микроагрегат, все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться. Давление почвенной влаги, как следует из полевых и лабораторных наблюдений, латерально отталкивает бур. Бур по определению нагревает бюкс. Бур сложен. Режим, несмотря на внешние воздействия, продуцирует электрод. Однако, при увеличении выборки подбел восстанавливает супесчаный уровень грунтовых вод.</p>
+            <p class="text">Личность, как бы это ни казалось парадоксальным, существенно понимает аутотренинг. Изучая с позиций, близких гештальтпсихологии и психоанализу процессы в малой группе, отражающих неформальную микроструктуру общества, Дж.Морено показал, что мышление непрерывно. Все это побудило нас обратить внимание на то, что коллективное бессознательное осознаёт страх. Придерживаясь жестких принципов социального Дарвинизма, репрезентативная система последовательно представляет собой гендерный эскапизм. Стратификация иллюстрирует стресс.</p>
+            <h2>Заголовок второго уровня</h2>
+            <p class="text">Субъект политического процесса, как принято считать, приводит гносеологический импульс. Супруги вступают в брак с жизненными паттернами и уровнями дифференциации Я, унаследованными от их родительских семей, таким образом бихевиоризм неизменяем. Между тем, конформизм традиционен. Политическое учение Монтескье символизирует конформизм.</p>
+            <p class="text_title">Маркированный список</p>
+            <ul class="text_list">
+                <li>Астрономии</li>
+                <li>Геологии</li>
+                <li>Гироскопии</li>
+                <li>Литературоведению</li>
+                <li>Маркетингу</li>
+                <li>Математике</li>
+            </ul>
+            <p class="text_title">Нумерованный список</p>
+            <ol class="text_list">
+                <li><span>Психологии</span></li>
+                <li><span>Страноведению</span></li>
+                <li><span>Физике</span></li>
+                <li><span>Философии</span></li>
+                <li><span>Химии</span></li>
+                <li><span>Эстетике</span></li>
+            </ol>
+            <p class="text_title">Оформление таблицы для примера</p>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>1 ряд колонка 1</th>
+                    <th>1 ряд колонка 2</th>
+                    <th>1 ряд колонка 3</th>
+                    <th>1 ряд колонка 4</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1 ряд колонка 1</td>
+                    <td>1 ряд колонка 2</td>
+                    <td>1 ряд колонка 3</td>
+                    <td>1 ряд колонка 4</td>
+                </tr>
+                <tr>
+                    <td>2 ряд колонка 1</td>
+                    <td>2 ряд колонка 2</td>
+                    <td>2 ряд колонка 3</td>
+                    <td>2 ряд колонка 4</td>
+                </tr>
+                <tr>
+                    <td>3 ряд колонка 1</td>
+                    <td>3 ряд колонка 2</td>
+                    <td>3 ряд колонка 3</td>
+                    <td>3 ряд колонка 4</td>
+                </tr>
+                <tr>
+                    <td>4 ряд колонка 1</td>
+                    <td>4 ряд колонка 2</td>
+                    <td>4 ряд колонка 3</td>
+                    <td>4 ряд колонка 4</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer_main">
+            <div class="container">
+                <div class="fl for_customers">
+                    <h5>покупателям</h5>
+                    <ul class="footer_links">
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантии и сервис</a></li>
+                        <li><a href="#">Лизинг</a></li>
+                    </ul>
+                    <button class="question_btn">Задать вопрос</button>
+                </div>
+                <div class="fl company">
+                    <h5>компания</h5>
+                    <ul class="footer_links">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Филиалы</a></li>
+                        <li><a href="#">Объекты</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+                <div class="fr contact_info">
+                    <h5>КОНТАКТНАЯ ИНФОРМАЦИЯ</h5>
+                    <div class="contacts_tabs">
+                        <div class="tab_nav">
+                            <span id="tab_nav_1" class="active">Центральный офис</span>
+                            <span id="tab_nav_2">Адреса филиалов</span>
+                        </div>
+                        <div class="tab_content">
+                            <div id="tab_1">
+                                <p><address>Владивосток, ул. Бородинская 20, оф. 501</address></p>
+                                <p>тел,: <a href="tel:+74232244220">+7 (423) 224-42-20</a> факс: +7 (423) 233-22-44</p>
+                                <p><a href="88007001217">8 (800) 700-12-17</a> (звонок бесплатный)</p>
+                                <p>e-mail: <a href="mailto:info@vektovl.ru">info@vektovl.ru</a></p>
+                            </div>
+                            <div id="tab_2">
+                                <p><address>Челябинск, ул. Петрова 17, оф. 27</address></p>
+                                <p>тел,: <a href="tel:+74232244220">+7 (413) 212-26-15</a> факс: +7 (413) 212-26-15</p>
+                                <p><a href="88007001217">8 (800) 852-27-65</a> (звонок бесплатный)</p>
+                                <p>e-mail: <a href="mailto:info@vektovl.ru">info2@vektovl.ru</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <p class="copyright">
+                    © 2011-2014 «Вектор-инженеринг» - строительные технологии и оборудование. <br/>
+                    Все авторские права защищены.
+                </p>
+                <p class="fr">Разработка сайта - <a href="#">студия АЙти Этика.</a></p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- popups -->
+<div class="p_body js__p_body js__fadeout"></div>
+<div class="popup js__callback_popup js__slide_top">
+    <a href="#" class="p_close js__p_close" title="Закрыть"></a>
+    <div class="p_content">
+        <p class="popup_title">Мы перезвоним вам в течении 15 минут!</p>
+        <fieldset class="wide correct">
+            <label for="name">Ваше имя</label>
+            <input type="text" class="popup_input wide" id="name" name="name"/>
+        </fieldset>
+        <div class="clear"></div>
+        <fieldset class="narrow error">
+            <label for="name">Номер телефона</label>
+            <input type="text" class="popup_input narrow" id="phone" name="phone"/>
+        </fieldset>
+        <small>Мы гарантируем конфиденциальность ваших данных</small>
+        <button class="popup_btn">Перезвоните мне</button>
+    </div>
+</div>
+<div class="popup js__pricelist_popup js__slide_top">
+    <a href="#" class="p_close js__p_close" title="Закрыть"></a>
+    <div class="p_content">
+        <p class="popup_title">Укажите e-mail на который будет отправлен прайс-лист</p>
+        <fieldset class="wide">
+            <label for="email">Адресс электронной почты</label>
+            <input type="text" class="popup_input wide" id="email" name="email"/>
+        </fieldset>
+        <div class="clear"></div>
+        <small>Мы гарантируем конфиденциальность ваших данных</small>
+        <button class="popup_btn">Получить прайс</button>
+    </div>
+</div>
+<div class="popup js__branches_popup js__slide_top">
+    <a href="#" class="p_close js__p_close" title="Закрыть"></a>
+    <div class="p_content">
+        <p class="popup_title">ВЫБЕРИТЕ ВАШ РЕГИОН</p>
+        <a href="#">Приморский край</a>
+        <a href="#">Красноярский край</a>
+        <a href="#">Хабаровский край</a>
+        <a href="#">Новосибирская область</a>
+        <a href="#">Сахалинская область</a>
+        <a href="#">Омская область</a>
+        <a href="#">Камчатский край</a>
+        <a href="#">Свердловская область</a>
+        <a href="#">Иркутская область</a>
+        <a href="#">Омская область</a>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="popup js__feedback_popup js__slide_top">
+    <a href="#" class="p_close js__p_close" title="Закрыть"></a>
+    <div class="p_content">
+        <p class="popup_title">ОБРАТНАЯ СВЯЗЬ</p>
+        <fieldset class="wide correct color">
+            <label for="name_feedback">Ваше имя</label>
+            <input type="text" class="popup_input wide" id="name_feedback" name="name_feedback"/>
+        </fieldset>
+        <div class="clear"></div>
+        <fieldset class="wide">
+            <label for="email_feedback">Адресс электронной почты</label>
+            <input type="text" class="popup_input wide" id="email_feedback" name="email_feedback"/>
+        </fieldset><div class="clear"></div>
+        <fieldset class="narrow error color">
+            <label for="phone_feedback">Номер телефона</label>
+            <input type="text" class="popup_input narrow" id="phone_feedback" name="phone_feedback"/>
+        </fieldset>
+        <div class="clear"></div>
+        <fieldset class="wide">
+            <label for="message">Сообщение</label>
+            <textarea name="message" id="message" cols="30" rows="10" class="popup_input popup_textatea"></textarea>
+        </fieldset>
+        <button class="popup_btn">Отправить</button>
+    </div>
+</div>
+<!-- END popups -->
+</body>
+</html>
