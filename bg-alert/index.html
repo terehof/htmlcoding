@@ -1,0 +1,933 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>background alert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/chosen.css"/>
+    <script src="js/chosen.jquery.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/jquery.uniform.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<!--[if lt IE 9]>
+<style>
+    .wrapper, footer, .header {
+        display: none;
+    }
+
+    body {
+        background: gray
+    }
+</style>
+<div style='text-align:center;'>
+    <br><br><a href="#" class="logo" style="float:none;"><img src="img/logo.png" alt=""></a><br><br><br><br><br>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"
+           style="color:#fff; font-size:18px;font-weight:bold; text-decoration:underline;">
+            You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.
+        </a>
+</div>
+<![endif]-->
+
+<div class="wrapper">
+    <!-- Modals -->
+    <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="media-object shield_icon">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Estabilishing secure connection</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade " id="modal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Accessing datafrom over 37 billion current public records
+                </div>
+                <div class="modal-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="media-object status green_check"></div>
+                        </div>
+                        <div class="media-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-object dep_logo federal"></div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Federal database</h4>
+                                    <p><span>Connecting to:</span> Federal Records Database</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="media-object status loading"></div>
+                        </div>
+                        <div class="media-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-object dep_logo wisconsin"></div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Federal database</h4>
+                                    <p><span>Connecting to:</span> Wisconsin Records Database</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="media-object status loading"></div>
+                        </div>
+                        <div class="media-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-object dep_logo california"></div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Federal database</h4>
+                                    <p><span>Connecting to:</span> California Records Database</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="blue-text">We search Thousands of Databases Nationwide</div>
+                    In addition to federal, state and county databases, we search thousds of databases nationwide to find you the most accurate and up to date information for John M Doe.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade " id="modal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Preparing John's Criminal Arrests Records
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">                            
+                            <div class="media small">
+                                <div class="media-left">
+                                    <div class="media-object status loading"></div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media">
+                                        <h4 class="media-heading">Criminal arrest records</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                            
+                            <div class="media small">
+                                <div class="media-left">
+                                    <div class="media-object status green_check"></div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media">
+                                        <h4 class="media-heading">Personal information</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                            
+                            <div class="media small">
+                                <div class="media-left">
+                                    <div class="media-object status green_check"></div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media">
+                                        <h4 class="media-heading">Detailed address history</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                            
+                            <div class="media small">
+                                <div class="media-left">
+                                    <div class="media-object status green_check"></div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media">
+                                        <h4 class="media-heading">Related persons</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                            
+                            <div class="media small">
+                                <div class="media-left">
+                                    <div class="media-object status green_check"></div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media">
+                                        <h4 class="media-heading">Marriage records</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                            
+                            <div class="media small">
+                                <div class="media-left">
+                                    <div class="media-object status green_check"></div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media">
+                                        <h4 class="media-heading">Licenses</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                            
+                            <div class="media small">
+                                <div class="media-left">
+                                    <div class="media-object status green_check"></div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media">
+                                        <h4 class="media-heading">Partners & Accociates</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                            
+                            <div class="media small">
+                                <div class="media-left">
+                                    <div class="media-object status green_check"></div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media">
+                                        <h4 class="media-heading">Sex offenders</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="media-object database_icon">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Pulling data from database</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    A full background report on John M Doe is available!
+                </div>
+                <div class="modal-body">
+                    <div class="general_info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!--<img src="img/map.jpg" alt="">-->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760.678066923776!2d-118.36904450000002!3d34.0634191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b938a1e38131%3A0x453542990de6c2d3!2zNjQyMCBXaWxzaGlyZSBCbHZkLCBMb3MgQW5nZWxlcywgQ0EgOTAwNDgsINCh0KjQkA!5e1!3m2!1sru!2sua!4v1425052831914" width="270" height="200"></iframe>
+                            </div>
+                            <div class="col-md-6">                                
+                                <div class="info">
+                                    <div class="info_item big">John M Doe</div>
+                                    <div class="info_item big">DOB: 03/17/1991</div>
+                                    <div class="info_item big">Age: 21</div>
+                                    <div class="info_item">
+                                        <span class="name">Current address:</span>
+                                        <span class="value">Blured</span>
+                                    </div>
+                                    <div class="info_item">
+                                        <span class="name">Phone number:</span>
+                                        <span class="value">Blured</span>
+                                    </div>
+                                    <div class="info_item">
+                                        <span class="name">Arrest records:</span>
+                                        <span class="value checked">Checked <span class="check_mark"></span></span>
+                                    </div>
+                                    <div class="info_item">
+                                        <span class="name">Marriage/Divorce:</span>
+                                        <span class="value checked">Checked <span class="check_mark"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="warning">
+                            <span class="warning_icon"></span>Warning - User Descretion is adviced
+                            <p>This report can contain graphic content about John M Doe</p>
+                        </div>
+                        <p>Check the boxes bellow to unlock secure access to this report</p>
+                        <form action="#">
+
+                            <label for="checkbox_1" class="js_label label-wrap">
+                                <input type="checkbox" value="" id="checkbox_1" class="checkbox">
+                                <span>A full background report is available for John A Doe! I understand that and that these reports may contain information that is graphic or shocking in nature.</span>
+                            </label>
+
+                            <label for="checkbox_2" class="js_label label-wrap">
+                                <input type="checkbox" value="" id="checkbox_2" class="checkbox">
+                                <span>I will not use any information obtained from Backgroundalert as a factor in determining the individual’s eligibility for employmnet, tenancy, consumer credit, insurance, or for any other purpose that would require FCRA compliance.</span>
+                            </label>
+                            <input type="submit" class="modal_button" value="сontinue ►">
+                        </form>        
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                A full background report on John M Doe is available!!
+            </div>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Our Background reports are compiled from actual data gathered from county, state and federal databases Nationwide.</p>
+                    <div class="logos">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <img src="img/federal_logo.jpg" alt="">
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <img src="img/wisconsin_logo.jpg" alt="">
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <img src="img/california_logo.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p>We found records for a John M Doe from the following Featured Premium databases:</p>
+                    <a href="#" class="modal_button">Download report <span class="download_icon"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade " id="modal_6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Preparing John's Address History Records
+                </div>
+                <div class="modal-body">
+                    <div class="media">
+                        <div class="media-left">                            
+                            <div class="row">
+                                <div class="col-md-12">                            
+                                    <div class="media small">
+                                        <div class="media-left">
+                                            <div class="media-object status loading"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media">
+                                                <h4 class="media-heading">Criminal arrest records</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">                            
+                                    <div class="media small">
+                                        <div class="media-left">
+                                            <div class="media-object status green_check"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media">
+                                                <h4 class="media-heading">Personal information</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">                            
+                                    <div class="media small">
+                                        <div class="media-left">
+                                            <div class="media-object status green_check"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media">
+                                                <h4 class="media-heading">Detailed address history</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">                            
+                                    <div class="media small">
+                                        <div class="media-left">
+                                            <div class="media-object status green_check"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media">
+                                                <h4 class="media-heading">Related persons</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">                            
+                                    <div class="media small">
+                                        <div class="media-left">
+                                            <div class="media-object status green_check"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media">
+                                                <h4 class="media-heading">Marriage records</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">                            
+                                    <div class="media small">
+                                        <div class="media-left">
+                                            <div class="media-object status green_check"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media">
+                                                <h4 class="media-heading">Licenses</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">                            
+                                    <div class="media small">
+                                        <div class="media-left">
+                                            <div class="media-object status green_check"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media">
+                                                <h4 class="media-heading">Partners & Accociates</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">                            
+                                    <div class="media small">
+                                        <div class="media-left">
+                                            <div class="media-object status green_check"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media">
+                                                <h4 class="media-heading">Sex offenders</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <img src="img/justice_logo.png" alt="">
+                            <p>The arrest Records section of your report shows any arrest or conviction records we have on John Smith or anyone else you look up. This includes any traffic tickets, arrest records, or outstanding warrants. If your search subject has a criminal record, we show where the crime occurred and provide details about the offense. Find out if anyone you know has been arrested or gone to jail!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="media-object database_icon">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Pulling data from database</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade " id="modal_7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Your Report on John M Doe is Ready To view. 
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="form_title">Save your report</span>
+                            <form action="#">
+                                <label for="sign_email">Email:</label>
+                                <input id="sign_email" type="email">
+                                <label for="sign_pass">Password:</label>
+                                <input id="sign_pass" type="password">
+                                <label for="sign_pass2">Confirm password:</label>
+                                <input id="sign_pass2" type="password">
+                                <input type="submit" value="Save report" class="modal_button">
+                            </form>
+                            <p class="descr">By clicking "Save Report" you represent that you are over 18  years of age andt agree to accept our Website Terms of Service, Member Agreement, Privacy Policy and allow Backgroundalert to send you email.</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <a href="#" class="login_link">Have an account? Login here »</a>
+                            <div class="lock_img"></div>
+                            <p>In order to view your report you must save your report and create a secure account. We collect only minimal information to setup a secure account. Your information is safe, secure & 100% private.</p>
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3">
+                                    <img src="img/norton-logo_big.png" alt="" class="norton-logo big"/>
+                                </div>
+                                <div class="col-md-9 col-sm-9">
+                                    <p>No Spam, Ever!</p>
+                                    <p>We’ll never sned you spam or share your email address with a third party.</p>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade " id="modal_8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Your Report on John M Doe is Ready To view. 
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="form_title">Save your report</span>
+                            <form action="#">
+                                <label for="sign_email">Email:</label>
+                                <input id="sign_email_2" type="email">
+                                <label for="sign_pass">Password:</label>
+                                <input id="sign_pass_2" type="password">
+                                <input type="submit" value="Save report" class="modal_button">
+                            </form>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <a href="#" class="login_link">Have an account? Login here »</a>
+                            <div class="lock_img"></div>
+                            <p>In order to view your report you must save your report and create a secure account. We collect only minimal information to setup a secure account. Your information is safe, secure & 100% private.</p>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="img/norton-logo_big.png" alt="" class="norton-logo big"/>
+                                </div>
+                                <div class="col-md-9">
+                                    <p>No Spam, Ever!</p>
+                                    <p>We’ll never sned you spam or share your email address with a third party.</p>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="warning_icon big"></span>
+                        </div>
+                        <div class="media-body">                            
+                            <div class="warning">
+                                Warning - User Descretion is adviced
+                                <p>This report can contain graphic content about John A Dilullo. We do not censor any of the information that may be returned. This report contains detailed personal information about John A Dilullo that some may find offensive or shocking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="modal_button">Continue ►</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of modals -->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_1">
+        pop-up 1
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_2">
+        pop-up 2
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_3">
+        pop-up 3
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_4">
+        pop-up 4
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_5">
+        pop-up 5
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_6">
+        pop-up 6
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_7">
+        pop-up 7
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_8">
+        pop-up 8
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_9">
+        pop-up 9
+    </button>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 text-left text-center-xs">
+                    <a class="logo" href="#">
+                        <img src="img/logo.png" alt=""/>
+                    </a>
+                </div>
+                <!--<div class="col-sm-4 text-right">-->
+                <!--<button class="btn-login">Login</button>-->
+                <!--</div>-->
+            </div>
+            <div class="row">
+                <div class="col-xs-16 col-sm-16 col-md-16 col-lg-16 text-center">
+                    <h1>Public records search</h1>
+                    <h2>Criminal Records, Marriage/Divorce Records, Personal Records & Much More!</h2>
+                </div>
+            </div>
+            <div class="row search-wrap">
+                <div class="start-bar">
+                    <img src="img/green-arrow.png" alt="" class="hidden-xs"/>
+                    <strong>START HERE:</strong> Search anyone, you'll get instant results!
+                </div>
+                <div class="col-sm-12 search-form">
+                    <form action="#">
+                        <input type="text" id="first-name" class="form-control input" placeholder="First Name"/>
+                        <input type="text" id="last-name" class="form-control input" placeholder="Last Name"/>
+                        <select name="state" id="state-select" class="form-control select">
+                            <option value="1">All states</option>
+                            <option value="2">Alabama</option>
+                            <option value="3">Alaska</option>
+                            <option value="4">Arizona</option>
+                            <option value="5">California</option>
+                            <option value="6">Colorado</option>
+                            <option value="7">Georgia</option>
+                            <option value="8">Idaho</option>
+                            <option value="9">Iowa</option>
+                            <option value="10">New Mexico</option>
+                            <option value="11">Texas</option>
+                            <option value="12">Virginia</option>
+                            <option value="13">West Virginia</option>
+                            <option value="14">Wisconsin</option>
+                        </select>
+                        <button class="btn-search">Search</button>
+                        <div class="clear"></div>
+                        <p>
+                            <span class="text-secure">This is a Secure Form</span>
+                            <a href="#" class="adv-search-link">Advanced Search</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="list-wrap">
+            <div class="container">
+                <div class="row list">
+                    <a href="#">
+                        <span>
+                            <img src="img/list-1.png" alt=""/>
+                        </span>
+                        <b>Personal Information</b>
+                    </a>
+                    <a href="#">
+                        <span>
+                            <img src="img/list-2.png" alt=""/>
+                        </span>
+                        <b>Arrest Records</b>
+                    </a>
+                    <a href="#">
+                        <span>
+                            <img src="img/list-3.png" alt=""/>
+                        </span>
+                        <b>Address History</b>
+                    </a>
+
+                    <a href="#">
+                        <span>
+                            <img src="img/list-4.png" alt=""/>
+                        </span>
+                        <b>Related Persons</b>
+                    </a>
+                    <a href="#">
+                        <span>
+                            <img src="img/list-5.png" alt=""/>
+                        </span>
+                        <b>Marriage & Divorce</b>
+                    </a>
+                    <a href="#">
+                        <span>
+                            <img src="img/list-6.png" alt=""/>
+                        </span>
+                        <b>Licenses</b>
+                    </a>
+                    <a href="#">
+                        <span>
+                            <img src="img/list-7.png" alt=""/>
+                        </span>
+                        <b>Sex Offenders</b>
+                    </a>
+                    <a href="#">
+                        <span>
+                            <img src="img/list-8.png" alt=""/>
+                        </span>
+                        <b>Partners & Associates</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-block-wrap">
+            <div class="text-block clearfix" id="details-personal">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 hidden-xs text-center">
+                            <img src="img/pic1.png" alt=""/>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Personal information</h3>
+                            <p>Things can get personal quick. We cover all the bases by providing basic information such
+                                as full legal name, current address, age, birth records, death records and more. We'll
+                                go deeper where you may find possible aliases and current listed telephone number on
+                                file. Our results are complete and accurate with details that will help you uncover if
+                                someone is possibly hiding the truth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block clearfix" id="details-arrest">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Arrest Records</h3>
+                            <p>No one wants to find out that someone they know has been arrested or been to jail, but
+                                it's an important thing to know about someone. We'll do a detailed criminal check on
+                                anyone you search and show you all available arrest and criminal conviction records they
+                                may have. You may find possible traffic tickets, arrest records, or outstanding
+                                warrants. When available, you'll be able to see the details of when and where the crime
+                                occurred and details about the offense.</p>
+                        </div>
+                        <div class="col-sm-6 hidden-xs text-center">
+                            <img src="img/pic2.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block clearfix" id="details-address">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 hidden-xs text-center">
+                            <img src="img/pic3.png" alt=""/>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Address History</h3>
+                            <p>You can tell a lot about a person by where they have been. We'll provide you an
+                                exhaustive address history on anyone complete with satellite pictures and all available
+                                details about each address including but not limited to possible roommates, phone
+                                numbers at address and census data. See how often someone has moved around and track
+                                down alarming patterns they may have.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block clearfix" id="details-related">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Related Persons</h3>
+                            <p>Get a complete relative report on anyone including but not limited to possible siblings,
+                                parents/grandparents, cousins, aunts/uncles and other extended family members. Our
+                                search is very exhaustive and far reaching, you may also be able to find possible
+                                boyfriends/girlfriends, roommates, partners, in-laws or close friends.</p>
+                        </div>
+                        <div class="col-sm-6 hidden-xs text-center">
+                            <img src="img/pic4.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block clearfix" id="details-marriage">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 hidden-xs text-center">
+                            <img src="img/pic5.png" alt=""/>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Marriage/Divorce</h3>
+                            <p>Want to find out if someone is married or has ever been divorced? Search anyone and our
+                                service will search local government marriage/divorce records and provide a complete
+                                history of all available marriage or divorce records they have ever had. Get all the
+                                available details about each marriage or divorce including but not limited to month,
+                                year, location of the wedding, or reason for divorce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block clearfix" id="details-licenses">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Licenses</h3>
+                            <p>See if someone holds a current Federal Aviation Administration pilot licenses or a Drug
+                                Enforcement Administration license. Get all the available details on each license
+                                including but not limited to license number, license status and expiration date. We pull
+                                records from the FAA and DEA so you can quickly and accurately find out if someone can
+                                prescribe controlled pharmaceuticals or fly a plane.</p>
+                        </div>
+                        <div class="col-sm-6 hidden-xs text-center">
+                            <img src="img/pic6.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block clearfix" id="details-offenders">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 hidden-xs text-center">
+                            <img src="img/pic7.png" alt=""/>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Sex Offenders</h3>
+                            <p>Sex offenders are scary and almost always dangerous people. We help you protect yourself
+                                by providing you a complete list of registered sex offenders that live near anyone.
+                                We'll provide details of what they were convicted for, current address, and any mugshots
+                                (when available) we have on record. Many of our clients avoid registered sex offenders
+                                by regularly searching themselves to get a current list of registered sex offenders that
+                                live nearby.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block clearfix" id="details-partners">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Partners & Associates</h3>
+                            <p>Our unique system will track down individuals who may be possibly associated with
+                                someone. We'll do an exhaustive search to track down possible relatives, business
+                                associates, roommates, boyfriends/girlfriends and any individual that may somehow be
+                                associated with the person you are searching.</p>
+                        </div>
+                        <div class="col-sm-6 hidden-xs text-center">
+                            <img src="img/pic8.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="logo-footer" href="#">
+                        <img src="img/logo-footer.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h4>Contact Us</h4>
+                    <p class="phone">866.203.0027</p>
+                    <p>
+                        Mon-Fri: 6am - 6pm PST <br/>
+                        Sat: 7am - 1pm PST <br/>
+                        Sun: Closed
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h4>Follow Us</h4>
+                    <div class="social">
+                        <a href="#" class="fb"></a>
+                        <a href="#" class="tw"></a>
+                        <a href="#" class="goo"></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12">
+                    <h4>Quick links</h4>
+                    <ul class="links-list">
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Remove My info</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h4>Mission statment</h4>
+                    <p>At Backgroundalert.com, our main goal is to provide you with the most comprehensive reports on
+                        the web in a quick and efficient manner. Our data architecture and proprietary technology allows
+                        us to search through literally billions of records and deliver results instantly.</p>
+                    <img src="img/norton-logo.png" alt="" class="norton-logo"/>
+                </div>
+            </div>
+            <div class="row disclaimer">
+                <div class="col-lg-16 col-md-16 col-sm-16 col-xs-16">
+                    <p>
+                        DISCLAIMER: Under the Fair Credit Reporting Act, 15 USC 1681 et seq., ("FCRA"), It is unlawful
+                        to use our service or the information we provide for any purpose that would require FCRA
+                        compliance; this includes but not limited to making decisions about consumer credit, employment,
+                        insurance, or tenant screening. BackgroundAlert is not a consumer reporting agency as defined by
+                        the Fair Credit Report Act, we do not provide consumer reports. Since Backgroundalert only
+                        collects this data and does not create it, we cannot fully guarantee its accuracy.
+                        <br/>
+                        © BackgroundAlert.com All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
