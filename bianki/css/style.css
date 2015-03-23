@@ -374,9 +374,6 @@ header {
 .subscribe-btn:hover {
     background-color: #484848;
 }
-.right-bunner {
-    max-width: 100%;
-}
 .tag-cloud {
     margin-left: -1.429%;
     margin-right: -1.429%;
@@ -810,6 +807,100 @@ p i {
     opacity: 0.8;
 }
 
+
+/*  search page  */
+.search-not-found-title {
+    font-size: 1.5em;
+    text-align: center;
+}
+.search-not-found-text {
+    font-size: 0.9375em;
+    line-height: 1.33;
+    margin-top: 15px;
+}
+.search-input.no-results {
+    background-color: #FFF;
+    background-image: url(../img/search-dark.png);
+    border: 1px solid #171717;
+    color: #171717;
+    width: 60%;
+}
+.search-result-text {
+    font-size: 1em;
+    line-height: 1.33;
+    margin-top: 15px;
+}
+.search-res-item {
+    margin-top: 25px;
+    border-top: 1px solid #CF352F;
+    padding-top: 7px;
+}
+.search-res-item .title {
+    display: block;
+    font-family: 'Roboto-Bold', Arial;
+    font-size: 1.125em;
+    line-height: 1.66em;
+    margin-bottom: 15px;
+    padding-right: 90px;
+    text-shadow: 0 0 1px #545454;
+    text-transform: uppercase;
+}
+.search-res-item time {
+    display: block;
+    font-size: 0.75em;
+    margin: 0 0 1em;
+}
+.search-res-item .text {
+    margin-bottom: 0.5em;
+}
+.search-res-item .text a {
+    text-decoration: underline;
+    color: #171717;
+}
+.search-res-item .text a:hover {
+    text-decoration: none;
+}
+/*  END search page  */
+
+
+/*  right-bunner  */
+.right-bunner {
+    
+}
+.swiper-container {
+    width: 256px;
+    max-width: 100%;
+    height: 100%;
+} 
+.swiper-slide img {
+    max-width: 100%;
+}
+
+/*  END right-bunner  */
+
+
+@media (max-width: 1200px) {
+    .navbar-nav.menu > li {
+        margin-right: 3%;
+    }
+    .slider-item-title {
+        display: block;
+        max-height: 68px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .slider-item-text {
+        display: block;
+        max-height: 106px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .slider-item-line {
+        margin: 23px 0;
+    }
+
+
+}
 @media (max-width: 992px) {
     .search-input {
         display: block;
